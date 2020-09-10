@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Character Test</title>
+    <meta charset="utf-8">
+    <!--<link rel="stylesheet" href="style.css">-->
+
+    <style>
+
+      /*---------------------------------Global Seting------------------------------*/
+/*--font-face--*/
+@font-face {
+    font-family: 'NeoDunggeunmo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}@font-face {
+    font-family: 'Recipekorea';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Recipekorea.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}@font-face {
+    font-family: 'Cafe24Ohsquare';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Cafe24Ohsquare.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}@font-face {
+    font-family: 'BBTreeGL';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGL.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    color: black;
+    font-family: "Cafe24Ohsquare";
+    text-align: center;
+}
+
+/*------------------------------------body------------------------------------*/
+a{
+    text-decoration: none;
+}a:link{
+    color: red; text-decoration: none;
+}a:visited{
+    color: black; text-decoration: none;
+}a:hover{
+    color: hotpink; text-decoration: none;
+}
+/*------------------------header--------------------------*/
+.header{
+    margin: 0 auto;
+    padding: 20px;
+    font-family: "NeoDunggeunmo";
+}.header-title{
+    margin: 0;
+    color: hotpink;
+}
+/*-------------------------main-----------------------*/
+.main{
+    margin: 20px;
+}
+.main-test{
+    padding: 20px;
+    font-size: 45px;
+    font-family: "Cafe24Ohsquare";
+    color: black;
+}
+.main-description{
+    padding: 20px;
+    font-family: "BBTreeGL";
+    text-align: center;
+}
+.button_start{
+    display: block;
+    width: 350px;
+    height: 100px;
+    font-family: 'NeoDunggeunmo';
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    background-color:darkgreen;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: none;
+}.button_start:hover{
+    color:#fff;
+    background-color: darkcyan;
+}
+/*-----------------------------page------------------------------*/
+.page_number{
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}.page_question{
+    padding: 20px;
+}
+.button_choose{
+    margin: 20px;
+}.button_choose1,.button_choose2{
+    width: 400px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid black;
+    background-color: white;
+    font-family: "Cafe24Ohsquare";
+    color: black;
+}.button_choose1:hover,.button_choose2:hover{
+    color: hotpink;
+    background-color: pink;
+}
+
+/*-----------------------------footer----------------------------*/
+.footer{
+    font-size: 14px;
+    color: black;
+    padding-top: 20px;
+    border-top: 1px solid black;
+}
+
+    </style>
+  </head>
+
+  <body>  
+    <script src="main.js"></script>
+    
+    <div class="header">
+      <a href="http://www.ewhaian.com/">2020 배꽃정원</a>  <!--나중에 행사 사이트와 연결-->
+      <h2 class="header-title">접속! EwhaiOn!</h2>
+    </div>
+
+    <div class="main">
+      <!--클릭하면 본페이지로 새로고침-->
+      <div class="main-test">
+        <a href="start.html">이화이언 성향테스트</a>
+      </div>
+  
+      <div class="main-description">
+        ~~~~~~~~~~~~~~~~~~설명~~~~~~~~~~~~~~~~~~~~
+      </div>
+  
+      <input type="button" value="접속!" class="button_start" onclick='start()'>
+    </div>
+
+    <div class="footer">
+        <p><a href="http://www.ewhaian.com/WebPage/Ewhaian/main.asp">소개</a></p>
+        <p><a href="http://www.ewhaian.com/WebPage/Ewhaian/about_1.asp">개발자 정보</a></p>
+    <div>
+  </body>  
+</html>
