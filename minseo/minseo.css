@@ -1,0 +1,98 @@
+html{
+    font-size: 20px;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background: url("./bg.jpg");
+    position: absolute;
+    text-align: center;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}a:hover{
+    text-decoration: none;
+    color: white;
+}a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.search input {
+    border-radius: 20px;    
+    border: white;
+    opacity: 30%;
+}
+.main-title{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+.semi-title{
+    font-size: 1rem;
+    color: white;
+    padding: 1rem;
+    font-style: italic;   
+}
+.btn_1{
+    width: 10rem;
+    height: 2rem;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    padding: 1rem 2rem 1rem 3rem;
+    margin: 1rem auto;
+    border-radius: 0.3rem;
+    opacity: 60%;
+}
+.btn_1:hover{
+    opacity: 100%;   
+}
+.text{
+    color: white;
+    font-size: 0.7rem;
+    float: none;
+}
+
+/*----------------------------footer-----------------------------*/
+.footer{
+    height: 2rem;
+    font-size: 1rem;
+    background-color: black;
+    color: white; 
+    
+    /*하단 고정*/
+    width: 100%;
+    position: fixed;
+    bottom: 0;   
+    left: 0;
+    opacity: 75%;
+
+}
+/*--------------------------------------media query----------------------------------------*/
+  /* 767px 이상일 때 */
+  @media(min-width:767px){ 
+
+    .btn_1{
+        width:3rem;
+        height: 3rem;
+        border-radius: 50%;
+        font-size: 1rem;
+        text-align: center;
+        line-height: 3rem;
+        cursor: pointer;
+        padding: 1rem 2rem 1rem 3rem;
+        margin: 1rem auto;
+        opacity: 75%;
+    }
+    /*
+    li{
+        float: left;
+    }
+    */
+  }
