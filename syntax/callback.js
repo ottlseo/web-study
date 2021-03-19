@@ -6,7 +6,8 @@ function a(){
 
 var a = function(){
     console.log('A');
-} // js에서는 함수가 값이다! 위와 같은 함수
+} 
+// js에서는 함수가 값이다! 위와 같은 함수
 
 function slowfunc(callback){ //callback이라는 parameter
     callback();
