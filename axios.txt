@@ -1,0 +1,47 @@
+
+levelTracker = (score) => {
+    console.log("SCORE:", score);
+    const { level } = this.state;
+
+    if (score <= 40 && score >= 35)
+      this.setState({
+        level: "1",
+      });
+    else if (score <= 34 && score >= 29)
+      this.setState({
+        level: "2",
+      });
+    else if (score <= 28 && score >= 22)
+      this.setState({
+        level: "3",
+      });
+    else if (score <= 21 && score >= 16)
+      this.setState({
+        level: "4",
+      });
+    else
+      this.setState({
+        level: "5",
+      });
+    return level;
+  };
+
+
+  render() {
+    const { quiz, answers, currentIndex, currentImage, score, level } =
+      this.state;
+
+    if (currentIndex == "10") { //마지막 문제일 때
+      this.levelTracker(score);  // this.levelTracker 하면 level 변수에 자동 저장됨
+      console.log(`${level}`);
+      return window.location.replace(`/result/${level}`);  //이 부분을 없애고,, level 보내는 역할
+                                                           //스프링에서 @RequestMapping(result/level) -> return 
+                                                           //
+                                                           //result/level 리턴해
+           
+        //여기 이 level을 통신해서 스프링 프로젝트로 가져오면 좋겠는데....
+
+    } 
+    else {  }
+
+  }
